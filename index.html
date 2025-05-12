@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>АУТО ТАМИ 2017</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url('пътнапомощ3.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('пътнапомощ3.jpg') no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.8;
+      z-index: -1;
+      animation: fadeInBackground 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeInBackground {
+      from { opacity: 0; }
+      to { opacity: 0.5; }
+    }
+
+    header {
+      color: white;
+      padding: 1px;
+      text-align: center;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .header-logo {
+      height: 180px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    section {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    p2, p3 {
+      padding: 30px 20px;
+      text-align: justify;
+    }
+
+    .cta-button {
+      background-color: #15253d;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.4em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: -10px;
+      margin-bottom: 40px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #FFFFFF;
+      color: #15253d;
+    }
+
+    .split-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+      max-width: 1000px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .split-container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+      max-width: 1000px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .dual-box-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 40px auto;
+      gap: 20px;
+    }
+
+    .slideshow-container {
+      width: 100%;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+    .slideshow-image {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      transition: opacity 1s ease-in-out;
+      opacity: 1;
+    }
+
+    .cta-call-button {
+      background-color: #15253d;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.4em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 35px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-call-button:hover {
+      background-color: #f0f0f0;
+      color: #15253d;
+    }
+
+    .box {
+      flex: 1 1 45%;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 25px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      min-width: 280px;
+    }
+
+    .box h3 {
+      color: #1a4f7a;
+      margin-top: 0;
+    }
+
+    .split-text, .split-image {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .split-text {
+      text-align: left;
+    }
+
+    .split-image {
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .split-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #15253d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.5em;
+    }
+
+    @media (max-width: 768px) {
+      .split-container {
+        flex-direction: column;
+      }
+      .split-image, .split-text {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="аутотамилого1.png" alt="Ауто Тами 2017 Лого" class="header-logo">
+  </header>
+
+  <section>
+    <a class="cta-button" href="tel:+359888123456">Обади се сега</a>
+  </section>
+
+  <div class="split-container">
+    <div class="split-text">
+      <h2 style="text-align: center;">АУТО ТАМИ 2017 е вашият надежден партньор за пътна помощ в София. </h2>
+      <p2>С денонощна наличност и професионален екип, ние сме готови да реагираме бързо при всяка автомобилна авария или инцидент. Нашите услуги включват репатрак, транспорт на МПС, подаване на ток, смяна на гуми и други.​</p2>
+    </div>
+    <div class="split-image">
+      <div class="slideshow-container">
+        <img class="slideshow-image" src="пътнапомощ2.jpg" alt="Галерия изображение">
+      </div>
+    </div>
+  </div>
+
+  <div class="dual-box-container">
+    <div class="split-container">
+      <div class="split-text">
+        <h2 style="text-align: center;">Нашите услуги</h2>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8em;">
+          <li>🚨 Пътна Авария</li>
+          <li>🔧 Транспорт на МПС</li>
+          <li>🛠️ Репатрак</li>
+          <li>🚗 Смяна на гуми</li>
+          <li>🕒 Достъпност в рамките на 45 минути</li>
+          <li>📍 Обслужване в цяла София и околността</li>
+          <li>📞 24/7 мобилна поддръжка</li>
+        </ul>
+      </div>
+      <div class="split-image">
+        <div class="slideshow-container">
+          <img class="slideshow-image" src="пътнапомощ2.jpg" alt="Галерия изображение">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="split-container2" style="text-align: left;">
+    <h2 style="color: #1a4f7a; font-style: italic; text-align: right; margin-top: 20px;">За Нас</h2>
+    <p3>
+      С повече от 7 години опит, ние сме вашият надежден партньор за пътна помощ в София, предлагащ денонощни услуги с професионален екип, готов да реагира бързо при всяка автомобилна авария или инцидент. Независимо дали сте закъсали в центъра или в периферията на града, можете да разчитате на бърза и професионална помощ. Услугите включват репатрак, транспорт на МПС, подаване на ток, смяна на гуми и други. Екипите ни са оборудвани с модерна техника и са обучени да се справят с всякакви ситуации на пътя. АУТО ТАМИ 2017 се стреми да предоставя услуги с високо качество на конкурентни цени, без скрити такси. Освен стандартните услуги, предлагат и специализирани решения като транспортиране на луксозни автомобили.
+    </p3>
+    <a href="tel:+359888123456" class="cta-call-button">Обади се сега</a>
+  </div>
+
+  <footer>
+    © 2025 АУТО ТАМИ 2017. Всички права запазени.
+  </footer>
+
+  <a href="tel:+359888123456" id="floatingCallButton" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #15253d;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  ">☏</a>
+
+  <script>
+    const images = [
+      'пътнапомощ3.jpg',
+      'пътнапомощ4.jpg',
+      'пътнапомощ5.jpg',
+      'пътнапомощ6.jpg',
+      'пътнапомощ7.jpg',
+      'пътнапомощ8.jpg',
+      'пътнапомощ9.jpg',
+      'пътнапомощ10.jpg',
+      'пътнапомощ11.jpg',
+      'пътнапомощ12.jpg',
+      'пътнапомощ13.jpg',
+      'пътнапомощ14.jpg',
+      'пътнапомощ15.jpg'
+    ];
+
+    let current = 0;
+    const imgEl = document.querySelector('.slideshow-image');
+
+    setInterval(() => {
+      imgEl.style.opacity = 0;
+
+      setTimeout(() => {
+        current = (current + 1) % images.length;
+        imgEl.src = images[current];
+        imgEl.style.opacity = 1;
+      }, 1000);
+    }, 4000);
+
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function toggleFloatingButton() {
+      const primaryButtons = document.querySelectorAll('.cta-button, .cta-call-button');
+      let anyVisible = false;
+
+      primaryButtons.forEach(button => {
+        if (isElementInViewport(button)) {
+          anyVisible = true;
+        }
+      });
+
+      const floatingButton = document.getElementById('floatingCallButton');
+      floatingButton.style.display = anyVisible ? 'none' : 'block';
+    }
+
+    toggleFloatingButton();
+    window.addEventListener('scroll', toggleFloatingButton);
+    window.addEventListener('resize', toggleFloatingButton);
+  </script>
+
+</body>
+</html>
